@@ -212,7 +212,7 @@ We use suffix (`ids`, `raw-feats`, `raw-energy`, `raw-f0`, `norm-feats`, and `wa
 
 **IMPORTANT NOTES**:
 - This preprocessing step is based on [ESPnet](https://github.com/espnet/espnet) so you can combine all models here with other models from ESPnet repository.
-- Regardless of how your dataset is formatted, the final structure of the `dump` folder **SHOULD** follow the above structure to be able to use the training script, or you can modify it by yourself 😄.
+- Regardless of how your dataset is formatted, the final structure of the `dump` folder **SHOULD** follow the above structure to be able to use the training script, or you can modify it by yourself.
 
 ## Training models
 
@@ -301,19 +301,6 @@ audio_after = mb_melgan.inference(mel_after)[0, :, 0]
 sf.write('./audio_before.wav', audio_before, 22050, "PCM_16")
 sf.write('./audio_after.wav', audio_after, 22050, "PCM_16")
 ```
-
-# Contact
-- [Minh Nguyen Quan Anh](https://github.com/tensorspeech): nguyenquananhminh@gmail.com
-- [erogol](https://github.com/erogol): erengolge@gmail.com
-- [Kuan Chen](https://github.com/azraelkuan): azraelkuan@gmail.com
-- [Dawid Kobus](https://github.com/machineko): machineko@protonmail.com
-- [Takuya Ebata](https://github.com/MokkeMeguru): meguru.mokke@gmail.com
-- [Trinh Le Quang](https://github.com/l4zyf9x): trinhle.cse@gmail.com
-- [Yunchao He](https://github.com/candlewill): yunchaohe@gmail.com
-- [Alejandro Miguel Velasquez](https://github.com/ZDisket): xml506ok@gmail.com
-
-# License
-All models here are licensed under the [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
 # Acknowledgement
 We want to thank [Tomoki Hayashi](https://github.com/kan-bayashi), who discussed with us much about Melgan, Multi-band melgan, Fastspeech, and Tacotron. This framework based-on his great open-source [ParallelWaveGan](https://github.com/kan-bayashi/ParallelWaveGAN) project.
